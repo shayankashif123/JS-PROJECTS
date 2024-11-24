@@ -1,0 +1,55 @@
+#amount {
+    width: 60px;
+}
+#category {
+    width: 100px;
+}
+#name {
+    width: 100px;
+}
+#date {
+    width: 110px;
+}
+button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    height: 30px;
+}
+th {
+
+
+
+    padding: 15px;
+}
+th, td {
+    border: 1px solid #ccc; /* Adds lines between rows and columns */
+    padding: 20px; 
+    background-color: rgba(211, 211, 211, 0.178);
+  }
+  td {
+    background-color: #fff;
+  }
+  #add {
+    cursor: pointer;
+  }
+  .btns {
+    background-color:none;
+    border-radius: 6px;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+  }
+  .expense {
+    position: absolute;
+    right: 20px;
+    font-size: larger;
+    font-weight: 600;
+  }
+  .total {
+    position: absolute;
+    right: 100px;
+    font-size: larger;
+    font-weight:600;
+
+  }
