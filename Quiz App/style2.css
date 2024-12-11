@@ -1,0 +1,25 @@
+legend {
+    text-align: center;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    margin-left: 50%;
+    background-color: orangered;
+    padding: 4px;
+    border: none;
+    border-radius: 6px;
+    width: 62px;
+    height: 30px;
+}
+.correct {
+    background-color: green;
+}
+.incorrect {
+ background-color: orangered;
+}
+body {
+    background-color: lightblue;
+}
