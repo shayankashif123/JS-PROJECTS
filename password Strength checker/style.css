@@ -1,0 +1,48 @@
+.container {
+    height: 373px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    
+}
+.heading {
+
+    font-size: xx-large;
+    color: green;
+}
+.txt {
+ 
+    margin-top: 50px;
+    font-size: xx-large;
+    font-weight: 700;
+
+}
+p {
+   
+    margin-top: 30px;
+}
+input {
+    margin-top: 30px;
+    width: 250px;
+    height: 30px;
+}
+.progress-container {
+width: 350px;
+height: 20px;
+background-color: #f3f3f3;
+margin-top: 20px;
+}
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    transition:width 0.3s ease;
+}
+.alert {
+    visibility: hidden;
+}
+.container.active .alert {
+    visibility: visible;
+    color: red;
+}
