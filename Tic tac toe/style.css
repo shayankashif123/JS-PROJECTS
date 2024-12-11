@@ -1,0 +1,38 @@
+.container {
+    height: 60vmin;
+}
+.heading {
+    text-align: center;
+}
+.game {
+    height: 60vmin;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    gap:15px ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#btn {
+    width: 90px;
+    height: 90px;
+    border-radius: 7px;
+    border: none;
+    color: red;
+    font-size: x-large;
+    font-weight: 900;
+}
+.winner {
+    text-align: center;
+}
+.button {
+    height: 40vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset {
+    background-color: black;
+    color: #fff;
+}
+
