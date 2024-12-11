@@ -1,0 +1,39 @@
+body {
+    background-color: lightcyan;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    padding: 4px;
+    background-color: lightyellow;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+#clock {
+  position: absolute;
+  top: 220px;
+  font-size: xx-large;
+  color: rgb(29, 37, 97);
+}
+h1 {
+    position: absolute;
+    top: 130px;
+    color:rgb(29, 37, 97)
+}
+label {
+    color: maroon;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+button {
+    padding: 4px;
+    background-color: lightblue;
+    border: none;
+    height: 28px;
+    cursor: pointer;
+}
