@@ -1,0 +1,78 @@
+
+#amount {
+    width: 60px;
+}
+#category {
+    width: 100px;
+}
+#name {
+    width: 100px;
+}
+#date {
+    width: 110px;
+}
+#add {
+    background-color: green;
+    color: #fff;
+    border: none;
+    height: 30px;
+  
+    cursor: pointer;
+  }
+
+
+
+th, td {
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    background-color: rgba(211, 211, 211, 0.178);
+  }
+  td {
+    background-color: #fff;
+  }
+  
+  .btns {
+    background-color:rgba(4, 4, 134, 0.998);
+    border-radius: 6px;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    width: 50px;
+    color: #fff;
+    height: 20px;
+  }
+  .btns2 {
+    color: #fff;
+    height: 20px;
+    background-color: rgb(123, 11, 11);
+    border-radius: 6px;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    width: 50px;
+  }
+  .expense {
+    position: absolute;
+    right: 30vw;
+    font-size: larger;
+    font-weight: 600;
+  }
+  
+  @media  screen and (min-width:700px) {
+    .container {
+      padding-left: 90px; 
+    }
+    
+  }
+  @media  screen and (min-width:1000px) {
+    .expense {
+      right: 50vw;
+
+    }
+  }
+  @media  screen and (min-width:1200px) {
+    .expense {
+      right: 60vw;
+
+    }
+  }
