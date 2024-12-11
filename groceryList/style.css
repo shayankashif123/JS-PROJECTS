@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.heading h2 {
+    text-align: center;
+
+}
+#input {
+ width: 190px;
+}
+#btn {
+    background-color: rgb(71, 168, 201);
+    border: none;
+    border-radius: 7px;
+    height: 20px;
+    width: 70px;
+    cursor: pointer;
+}
+.new-item {
+    margin: 5px 10px;
+    font-size: x-large;
+    font-weight:500
+}
+.clear {
+    text-align: center;
+    color: red;
+    font-size: larger;
+    cursor: pointer;
+}
+#icon img {
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    visibility: visible;
+    cursor: pointer;
+}
+#update {
+    height: 20px;
+    position: absolute;
+    right: 50px;
+    visibility: visible;
+    cursor: pointer;
+}
