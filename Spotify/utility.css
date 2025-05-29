@@ -1,0 +1,10 @@
+.invert {
+    filter: invert(1);
+}
+.background_color {
+    color: #fff;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+}
