@@ -1,0 +1,57 @@
+.container{
+    height: 60vh;
+    width: 50vw;
+    background-color: gainsboro;
+    margin-left: 40px;
+}
+.heading {
+    font-family: "Italianno", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20%;
+    color: rgb(158, 136, 11);
+}
+.txt {
+    margin-left: 90px;
+    margin-top: 30px;
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.svg img {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    cursor:pointer;
+    
+}
+
+.answer {
+    visibility: hidden; 
+}
+
+.txt.active .answer {
+    visibility: visible;  
+    padding: 10px 10px;
+}
+.txt.active{
+    height: auto;
+}
+@media only screen and (max-width:1100px) {
+    .container {
+        height: 80vh;
+        width: 400px;
+        margin-left: 10px;
+    }
+    .txt {
+     margin-left:20px;
+     width: 300px;
+    }
+}

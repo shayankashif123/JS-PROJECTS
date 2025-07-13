@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    position: relative;
+}
+.container {
+    text-align: center;
+    padding: 80px;
+}
+.b1 {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius:7px ;
+    width: 83px;
+}
+.b1-b {
+    border: 2px solid blue;
+}
+.string {
+    position: absolute;
+    top: 90px;
+    right: 49%;
+    font-size: xxx-large;
+    color: green;
+
+}
+@media (max-width:495px) {
+    .b1 {
+        width: 73px;
+    }
+    .container {
+        padding: 60px;
+    }
+}
