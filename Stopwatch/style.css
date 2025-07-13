@@ -1,0 +1,35 @@
+
+.container {
+    /* padding: 150px; */
+    text-align: center;
+    height: 120px;
+    margin-top: 150px;
+    height: 250px;
+    border: 2px solid;
+}
+.btn {
+margin: 10px;
+width: 90px;
+padding: 5px;
+border: none;
+color: #fff;
+}
+#display {
+margin: 40px;
+border: 2px solid whitesmoke;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: xxx-large;
+color: blue;
+}
+.btn1{
+    background-color: blue;
+}
+.btn2 {
+    background-color: rgb(209, 17, 17);
+}
+.btn3 {
+    background-color: green;
+}

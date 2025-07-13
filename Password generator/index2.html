@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Just a light background for testing */
+        }
+        form {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        input {
+            width: 250px;
+            margin-bottom: 10px; /* Space between inputs */
+            padding: 8px; /* Some padding */
+        }
+        button {
+            width: 70px;
+            padding: 8px; /* Padding for better click area */
+        }
+    </style>
+</head>
+<body>
+    <form id="form-id">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="Password" placeholder="Password" required>
+        <button type="button" id="submit">Sign-up</button>
+    </form>
+    <p id="message"></p>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const password = document.getElementById("Password");
+            const username = document.getElementById("username");
+            const sign_up = document.getElementById("submit");
+            const message = document.getElementById("message");
+
+            sign_up.addEventListener("click", (e) => {
+                e.preventDefault(); // Prevent form submission
+                message.textContent = "Button works!";
+                message.style.color = "green";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.nav-bar img {
+    height: 60px;
+}
+.txt {
+    text-align: center;
+}
+.txt2 {
+    text-align: center;
+    margin-top: 30px;
+}
+.choice {
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+button {
+margin: 0px 20px;
+height: 20px;
+width: 90px;
+border-radius: 7px;
+}
+#alpha {
+    background-color: green;
+    border: none;
+}
+#int {
+    background-color: red;
+    border:none;
+}
+

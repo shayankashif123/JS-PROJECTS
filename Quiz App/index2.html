@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <form id="quiz">
+
+        <fieldset>
+        <legend>Simple Quiz</legend>
+        <div class="question" data-correct="a">
+            <p>1.What is the capital of Pakistan?</p>
+            <label ><input type="radio" value="a">a) Islamabad</label>
+            <label ><input type="radio" value="b">b) Karachi</label>
+            <label ><input type="radio" value="c">c) Lahore</label>
+            <label ><input type="radio" value="d">d) Peshawar</label>
+        </div>
+        <hr>
+        <div class="question" data-correct="c">
+            <p>2.Who is the 46 president of USA</p>
+            <label> <input type="radio" value="a">a) Barack Obama</label>
+            <label> <input type="radio" value="b">b) Donald Trump</label>
+            <label> <input type="radio" value="c">c) Joe Biden</label>
+            <label> <input type="radio" value="d">d) Bill Clinton</label>
+        </div>
+        <hr>
+        <div class="question" data-correct="d">
+            <p>3.Which Planet is called Red-planet</p>
+            <label><input type="radio" value="a">a) Earth</label>
+            <label><input type="radio" value="b">b) Jupiter</label>
+            <label><input type="radio" value="c">c) Uranus</label>
+            <label><input type="radio" value="d">d) Mars</label>
+        </div>
+        <hr>
+        <button id="submitBtn" type="submit">Submit</button>
+    </fieldset>
+    </form>
+    <div class="score"></div>
+    <script src="script2.js"></script>
+</body>
+</html>

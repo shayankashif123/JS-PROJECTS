@@ -1,0 +1,417 @@
+:root {
+    --opacity: 0;
+}
+body {
+    background-color: black;
+    color: #fff;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.left {
+    width: 25vw;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #121212;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+
+}
+
+.home ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.library {
+    background-color: #090909;
+    width: 90vw;
+    height: 100vh;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.playlist {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    cursor: pointer;
+}
+
+.play span {
+    font-size: 15px;
+    width: 64px;
+    padding: 12px;
+}
+
+
+
+.right {
+    color: #fff;
+    width: 75vw;
+    margin: 16px;
+    position: absolute;
+    top: 0px;
+    left: 27vw;
+
+
+}
+
+.nav {
+    width: 95%;
+    background-color: #121212;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.signup {
+    right: 22vw;
+    background-color: #121212;
+    color: #fff;
+    border: none;
+    margin: 0px 30px;
+}
+
+.login {
+    right: 10vw;
+    border-radius: 16px;
+    background-color: #fff;
+    width: 60px;
+    height: 30px;
+}
+
+.card-container {
+    background-color: #090909;
+    margin-top: 10px;
+    height: 100vh;
+    width: 95%;
+}
+
+.heading h2 {
+    padding: 25px;
+}
+
+.song_list {
+    margin-top: 50px;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    bottom: 7px;
+    font-size: 13px;
+    gap: 10px;
+    z-index: 10;
+}
+
+.footer a {
+    color: gray;
+}
+
+.play-bar {
+    position: absolute;
+    bottom: 30px;
+    width: 90%;
+    background-color: #121212;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.seekbar {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 130px;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+.volume {
+    position: absolute;
+    right: 100px;
+    bottom: 60px;
+}
+.volume-logo {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 128px;
+    left: 0px;
+    cursor: pointer;
+}
+.next-btn img {
+    position: relative;
+    left: 30px;
+}
+
+.prev-btn img {
+    position: relative;
+    right: 30px;
+}
+
+.song_info {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+}
+
+.song_time {
+    position: absolute;
+    right: 10vw;
+    color: #fff;
+}
+
+.song_list ul li {
+    color: #fff;
+    border: 1px solid #fff;
+    height: auto;
+    width: 80%;
+
+}
+
+.play-gr img {
+    position: absolute;
+    right: 13px;
+    bottom: 140px;
+    height: 40px;
+    transition: all 0.9s ease-out ;
+    opacity: var(--opacity);
+}
+
+.song_list ul li {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    height: auto;
+}
+
+.info {
+    font-size: 13px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.card {
+    width: 200px;
+    height: 330px;
+    background-color: #252525;
+    position: relative;
+    cursor: pointer;
+}
+.card:hover {
+    --opacity: 1;
+}
+
+.cover {
+    width: 100%;
+    object-fit: contain;
+
+}
+.play-bar-btn {
+    cursor: pointer;
+}
+.hamburger {
+    display: none;
+}
+.close {
+    display: none;
+}
+
+.card-container h2,
+p {
+    padding: 10px;
+    color: #fff;
+}
+@media (max-width:1150px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: auto;
+        column-gap: 29px;
+        row-gap: 35px;
+    }
+    .play-bar {
+        bottom: 0px;
+        position: fixed;
+        z-index: 10;
+    }
+    .volume {
+        position: fixed;
+        right: 70px;
+        bottom: 30px;
+        z-index: 15;
+    }
+    .hamburger {
+        display: block;
+    }
+    .right {
+        width: 100vw;
+        left: 0px;
+        margin: 0px;
+    }
+    .left {
+        left: -100%;
+        width: 100vw;
+    }
+    .close {
+        display: block;
+    }
+    .card-container h2,p {
+        margin-left: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+        column-gap: 29px;
+        row-gap: 35px;
+    }
+    .volume {
+        position: fixed;
+        right: 60px;
+        bottom: 30px;
+        z-index: 15;
+    }
+    .card-container h2,p {
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .left {
+        left: -100%;
+        width: 100vw;
+        z-index: 1;
+
+    }
+    .close {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+@media (max-width: 650px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 175vw;
+        column-gap: 15px;
+        row-gap: 35px;
+    }
+    .volume {
+        position: fixed;
+        right: 40px;
+        bottom: 30px;
+        z-index: 15;
+    }
+    .card-container h2,p {
+        margin-left: 30px;
+        padding-left: px;
+    }
+    .close {
+        display: block;
+    }
+    .left {
+        left: -100%;
+        width: 100vw;
+
+    }
+    .hamburger {
+        display: block;
+    }
+    .right {
+        width: 100vw;
+        left: 0px;
+        margin: 0px;
+    }
+    .card {
+        width: 170px;
+        height: 300px;
+    }
+}
+@media (max-width: 450px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 220vw;
+        column-gap: 5px;
+        row-gap: 35px;
+    }
+    .volume {
+        position: fixed;
+        right: 10px;
+        bottom: 30px;
+        z-index: 15;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-container h2,p {
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .close {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .right {
+        width: 100vw;
+        left: 0px;
+        margin: 0px;
+    }
+    .left {
+        left: -100%;
+        width: 100vw;
+        z-index: 1;
+    }
+    .card {
+        width: 150px;
+    }
+}

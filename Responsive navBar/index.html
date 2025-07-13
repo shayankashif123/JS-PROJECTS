@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="sidebar">
+            <div class="logo">
+        
+            <i class="bx bxl-codepen"><span class="top">CodeCommerce</span></i>
+            </div>
+            <span>
+                <i class="bx bx-menu" id="btn"> </i>
+            </span>
+            <p>Try our online editor</p>
+            <div class="border">Start Coding</div>
+            <li>
+            <i class="bx bxs-grid-alt"><span class="nav-items">Dashboard</span></i>
+            <span class="tooltip">Dashboard</span>
+        </li>
+            <li>
+                <i class="bx bxs-shopping-bag"><span class="nav-items">Products</span></i>
+                    <span class="tooltip">Products</span>
+                </li>
+                <li>
+                    <i class="bx bx-list-check"><span class="nav-items">Cateogories</span></i>
+                        <span class="tooltip">Cateogories</span>
+                    </li>
+                    <li>
+                        <i class="bx bxs-food-menu"><span class="nav-items">Orders</span></i>
+                            <span class="tooltip">Orders</span>
+                        </li>
+                        <li>
+                            <i class="bx bx-body"><span class="nav-items">Customers</span></i>
+                                <span class="tooltip">Customers</span>
+                            </li>
+                            <li>
+                                <i class="bx bx-cog"><span class="nav-items">Settings</span></i>
+                                    <span class="tooltip">Settings</span>
+                                </li>
+                                <li>
+                                    <i class="bx bx-log-out"><span class="nav-items">Logout</span></i>
+                                        <span class="tooltip"> Logout</span>
+                                    </li>
+        </div>
+        
+
+    </body>
+        <script>
+            let sidebar=document.querySelector(".sidebar");
+            let btn=document.querySelector("#btn")
+            btn.addEventListener("click", ()=> {
+                sidebar.classList.toggle("active");
+            });
+        </script>
+           
+
+</html>

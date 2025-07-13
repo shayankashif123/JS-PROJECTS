@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+    <link rel="stylesheet" href="pg.css">
+</head>
+<body>
+    <div class="top">Palindrome checker</div>
+    <div class="cent">(integer)</div>
+    <div class="container">
+        <form id="input">
+            <label for="int">Number:</label>
+             <input type="number" id="num" placeholder="input">
+        </form>
+        <button id="check-btn">Check</button>
+        <div class="result">
+            
+        </div>
+    </div>
+    <script>
+        document.getElementById("check-btn").addEventListener("click",(e)=> {
+            // e.preventDefault();
+            let num= document.getElementById("num").value;
+            const result = isPalindrome(num);
+            const resultelem= document.querySelector(".result");
+            if(result) {
+                resultelem.textContent = `${num} is a palindrome`
+                resultelem.parentElement.classList.add("correct");
+            }
+            else {
+                resultelem.textContent =  `${num} is not a palindrome`
+                resultelem.parentElement.classList.add("incorrect");
+            }
+        })
+        function isPalindrome(num) {
+           const str = num.toString();
+           return str=== str.split('').reverse().join('');
+        }
+    </script>
+</body>
+</html>

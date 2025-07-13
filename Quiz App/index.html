@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Quiz</h1>
+        <form id="Simple Quiz">
+            <fieldset>
+            <legend>General Knowledge</legend>
+            <div class="question" data-correct="b">
+                <label>1. What is the capital of Pakistan?</label> 
+              <label><input type="radio" name="q1" value="a">a) Lahore</label>
+              <label><input type="radio" name="q1" value="b">b) Islamabad</label>
+              <label><input type="radio" name="q1" value="c">c) Karachi</label>
+              <label><input type="radio" name="q1" value="d">d) Peshawar</label>
+            </div>
+            <hr>
+            <div class="question" data-correct="b">
+                <label>2. Which planet is known as the Red Planet?</label>
+                <label><input type="radio" name="q2" value="a"> a) Earth</label>
+                <label><input type="radio" name="q2" value="b"> b) Mars</label>
+                <label><input type="radio" name="q2" value="c"> c) Jupiter</label>
+                <label><input type="radio" name="q2" value="d"> d) Saturn</label> 
+
+            </div>
+            <hr>
+           <button type="button" id="submitBtn">Submit</button>
+        </fieldset>
+            </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

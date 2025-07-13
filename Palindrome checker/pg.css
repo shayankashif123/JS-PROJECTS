@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+#input input {
+    width: 110px;
+}
+button {
+    margin: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    height: 20px;
+    font-weight: 600;
+}
+.top {
+    text-align: center;
+    font-size: 1.5em;
+}
+.cent {
+    text-align: center;
+}
+.result {
+    display: flexbox;
+    flex-direction: column;
+}
+.correct {
+    color: green;
+}
+.incorrect {
+    color: rgb(205, 13, 13);
+}

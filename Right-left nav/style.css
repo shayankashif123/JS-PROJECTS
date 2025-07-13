@@ -1,0 +1,62 @@
+.right img {
+    width: 30px;
+    right: 10px;
+    position: absolute;
+    z-index: 10;
+}
+.right-side {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: rgba(0, 0, 0, 0.687);
+    transition: transform 0.5s ease-in;
+}
+.right-side.open {
+    transform: translateX(0);
+}
+
+.list ul li {
+    margin-top: 30px;
+    list-style: none;
+    position: relative;
+    right:80px;
+    top: 10px;
+}
+.list ul li a {
+    text-decoration: none;
+    color:#fff
+}
+.list {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0; 
+    padding: 10px; /* Adds some inner spacing */
+
+}
+.list.open {
+    display: block;
+}
+.left img {
+    width: 30px;
+    /* right: 10px; */
+    position: absolute;
+    z-index: 10;
+}
+.left-side {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 100vh;
+    transform:translateX(-100%) ;
+    background-color: rgba(0, 0, 0, 0.687);
+    transition: transform 0.5s ease-in;
+}
+.left-side.left-open {
+    transform: translateX(0);
+}
+

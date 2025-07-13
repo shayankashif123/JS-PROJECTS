@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <img src="https://bwseatspalindromes.netlify.app/img/logos/palindrome-checker-logo.png" alt="">
+            <div class="txt">Welcome to Palindrome checker app</div>
+            <div class="txt2">Choose any of them</div>
+        </div>
+    </header>
+    <main>
+        <div class="choice">
+        <button id="alpha">ALPHABETS</button>
+        <button id="int">NUMBERS</button>
+        </div>
+    </main>
+    <script>
+        document.getElementById("alpha").addEventListener("click",()=> {
+            window.location.href = "alphabets.html"
+        })
+        document.getElementById("int").addEventListener("click",()=> {
+            window.location.href = "nums.html"
+        })
+    </script>
+</body>
+</html>

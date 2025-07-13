@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pg.css">
+    <title>ALPHABETS</title>
+</head>
+
+<body>
+    <div class="top">Palindrome checker</div>
+    <div class="cent">(String)</div>
+    <div class="container">
+        <form id="input">
+            <label for="alpha">String:</label>
+            <input type="text" id="alpha" placeholder="input">
+        </form>
+        <button id="check-btn">Check</button>
+        <div class="result">
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("check-btn").addEventListener("click", (e) => {
+            const string = document.getElementById("alpha").value;
+            const resultelem = document.querySelector(".result");
+            const result = ispalindrome(string);
+            if (result) {
+                resultelem.textContent = `${string} is a palindorme`
+                resultelem.parentElement.classList.add("correct");
+            }
+            else {
+                resultelem.textContent = `${string} is not a palindorme`
+                resultelem.parentElement.classList.add("incorrect");
+            }
+            function ispalindrome(str) {
+                const cleaned = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+                return cleaned === cleaned.split("").reverse().join("");
+            }
+        })
+    </script>
+</body>
+
+</html>
